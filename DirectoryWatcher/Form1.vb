@@ -36,6 +36,8 @@ Public Class Form1
         MyWatcher.EnableRaisingEvents = False
     End Sub
 
+    ' Test commit
+
     Private Sub MyWatcher_Renamed(sender As Object, e As RenamedEventArgs) Handles MyWatcher.Renamed
         If e.Name.Contains("xlsx") Then
             Dim copyFrom As String = e.FullPath
